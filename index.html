@@ -12,8 +12,8 @@
 </head>
 
 <body class="font-Raleway mt-6">
-    <header class="w-[1170px] m-auto">
-
+    <header class="lg:w-[1170px] m-auto">
+        <!-- nav bar -->
         <div class="navbar bg-base-100 px-0">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -32,7 +32,7 @@
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="text-4xl font-extrabold">P-Ticket</a>
+                <a class="lg:text-4xl text-2xl font-extrabold">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -48,23 +48,123 @@
             </div>
         </div>
 
-        <div
-            class="flex flex-col justify-center items-center space-y-6 bg-[url('Images/banner.png')] bg-no-repeat h-[550px] mt-7">
-            <h2 class=" text-5xl font-extrabold text-[#fff]">End-To-End Travel with</h2>
-            <h2 class="text-5xl font-extrabold text-green-500"> P Paribahan</h2>
-            <p class="text-[18px] font-medium text-[#fff] text-center">Yes you can run unit tests and view the result
-                directly
-                within the app . the <br> integrated testing features allow for a atremlined</p>
-            <div>
-                <button
-                    class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  px-11 text-[20px] font-bold text-black bg-green-700">Buy
-                    ticket</button>
+        <!--banner style -->
+        <div class="hero  lg:h-[550px] lg:mt-12 rounded-2xl bg-no-repeat "
+            style="background-image: url('Images/banner.png'); ">
+            <div class=""></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-2xl lg:space-y-7 space-y-2">
+                    <h1 class=" lg:text-6xl text-3xl font-bold">End-To-End Travel with</h1>
+                    <h2 class="lg:text-6xl text-3xl font-extrabold text-green-500"> P Paribahan</h2>
+                    <p class="mb-5 lg:text-[18px] lg:font-medium text-[#fff] text-center">Yes you can run unit tests and
+                        view
+                        the result
+                        directly
+                        within the app . the integrated testing features allow for a atremlined.</p>
+                    <button class="btn lg:text-[20px] font-bold text-black bg-green-700 lg:px-4 sm:px-4  ">Buy
+                        ticket</button>
+                </div>
             </div>
         </div>
 
-    </header>
-    <main>
 
+        <!-- cupon section -->
+
+        <section class=" lg:w-[1170px] lg:mt-[150px] mt-12">
+            <h2 class="lg:text-6xl text-2xl font-bold text-center">Best offers for you</h2>
+            <div class="lg:flex  lg:gap-x-5  ">
+                <div class="rounded-3xl lg:h-[220px] lg:w-[573px] bg-[#FFBF0F] flex lg:mt-12 mt-4">
+                    <div
+                        class=" lg:h-[220px] lg:w-[350px]  border-r-4 border-white border-dotted text-left p-8   flex flex-col justify-center items-start">
+                        <h2 class=" text-4xl font-bold">15% OFF</h2>
+                        <p class="text-2xl font-medium">on your next purchase</p>
+                        <p class=" text-2xl font-medium">Use by january 2024.</p>
+                    </div>
+                    <div class=" flex flex-col justify-center items-start gap-y-2 p-8">
+                        <h2 class="text-4xl font-bold ">NEW<span class="font-raleway">15</span></h2>
+                        <p>coupon code</p>
+                        <div class=" rounded-full bg-white">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl lg:h-[220px] lg:w-[573px] bg-[#F78C9C] flex lg:mt-12 mt-2">
+                    <div
+                        class=" lg:h-[220px] lg:w-[350px]  border-r-4 border-white border-dotted text-left p-8  flex flex-col justify-center items-start">
+                        <h2 class=" text-4xl font-bold">20% OFF</h2>
+                        <p class="text-2xl font-medium">on your next purchase</p>
+                        <p class=" text-2xl font-medium">Use by january 2024.</p>
+                    </div>
+                    <div class=" flex flex-col justify-center items-start gap-y-2 p-8">
+                        <h2 class="text-4xl font-bold ">NEW<span class="font-raleway">20</span></h2>
+                        <p>coupon code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-[62px]">
+                <button class="btn btn-outline   text-green-500 border-green-500">Secondary</button>
+            </div>
+    </header>
+    <main class="max-w-full  bg-gray-100 rounded-t-[100px] border-2 border-solid border-t-green-500 lg:mt-10">
+        </section>
+        <!-- bus info section -->
+        <section class="lg:w-[1170px] m-auto lg:pt-20  bg-gray-100">
+            <div class="">
+                <h1 class="text-2xl text-center lg:text-6xl font-bold text-black  lg:mt-10">Green Line Paribahan</h1>
+                <p class="text-xl text-center m-auto lg:w-[755px] mt-5">Green Line Paribahan offers bus service with an
+                    online
+                    reservation available.
+                    Before booking your ticket,
+                    read other travellers’ reviews to choose the best option.</p>
+                <!-- first colum -->
+                <div class="lg:flex  bg-white lg:mt-12 lg:pt-11 rounded-2xl">
+                    <div class="lg:w-10/12 p-5">
+                        <div class="flex justify-between">
+                            <div class="flex ">
+                                <div><img src="images/bus-logo.png" alt=""></div>
+                                <div>
+                                    <h2 class="lg:text-2xl font-bold text-black">Green Line Paribahan</h2>
+                                    <p class="lg:text-xl text-gray-500">Coach-009-WEB ! AC _business</p>
+                                </div>
+                            </div>
+                            <div><button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-xl"><img
+                                        src="images/seat-green-filled.png" alt=""> 40 seats left</button></div>
+                        </div>
+                        <div class=" lg:w-full lg:h-[140px]  bg-gray-100 mt-4 p-4 rounded-md">
+                            <div class="flex justify-between pt-2 ">
+                                <h3>Route</h3>
+                                <h3>Dhaka-sylet</h3>
+                            </div>
+                            <hr class=" mt-2 ">
+                            <div class="flex justify-between">
+                                <h3>Depurture time</h3>
+                                <h3>9:00pm</h3>
+                            </div>
+                            <hr class=" mt-2">
+                            <div class="lg:flex justify-between max-sm:flex-col gap-x-6">
+
+                                <button class="btn btn-outline bg-gray-200 border-0 text-black">Boarding-point
+                                    luxmipure</button>
+                                <button class="btn btn-outline bg-gray-200 border-0 text-black">droping-point
+                                    Bogura</button>
+                                <button class="btn btn-outline bg-gray-200 border-0 text-black">Est.
+                                    time-11Hsoure</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second colum -->
+                    <div class="flex  justify-center items-center lg:w-2/12 bg-white">
+                        <div class=" ">
+                            <span><img class="" src="images/fare.png" alt=""></span>
+                            <h2 class="lg:text-2xl font-bold text-black">550 Taka</h2>
+                            <p class="lg:text-xl text-gray-500">Per seat</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
     <footer>
 
