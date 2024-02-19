@@ -1,18 +1,27 @@
 
 const items = document.querySelectorAll(".ticket");
 let price1=550;
-
+const maxseatallowed =4;
 let count = 0;
-let clicks=0;
 for( let i=0;i<items.length; i=i+1){
     let busSeat =items[i];
     busSeat.addEventListener("click", function(e){
-      
+
+
+        if(count< maxseatallowed){
+            busSeat.classList.add('booked');
+           
+        }else{
+            alert("you have booked 4 seat. no more booking allowed.")
+        }
+
+
+
 
        count=count+1;
         busSeat.classList.add('bg-green-500');
-        
-// totalsit
+       
+// totalseat
         const totalsit =document.getElementById("Total-seat").innerText;
        
         const updatedvalue = parseInt(totalsit)-1
@@ -23,6 +32,11 @@ for( let i=0;i<items.length; i=i+1){
         let convertedprice =parseInt(totalprice);
         let alltotal=price1+convertedprice;
         document.getElementById("all-price").innerText=alltotal;
+
+        let totalprice1 =document.getElementById("total").innerText;
+        let convertedprice1 =parseInt(totalprice1);
+        let alltotal1=price1+convertedprice1;
+        document.getElementById("total").innerText=alltotal1;
 
         // appendChild
     const placename =e.target.innerText;
@@ -46,6 +60,7 @@ for( let i=0;i<items.length; i=i+1){
         
         setinnertext('number',count)
         setinnertext('Total-seat', updatedvalue);
+    
 
     })
 
@@ -61,3 +76,31 @@ function scrolledmainsection(){
     showelement.scrollIntoView({behavior:'smooth'});
     
 }
+// // // const nextbtn =document.getElementById("next-step");
+// // // nextbtn.addEventListener("click",function(){
+// // //     hideElementById('header-section');
+// // //     showElementById('hidden-area');
+    
+// //  })
+ function nextbtn(){ 
+    showElementById('hidden-all')
+    hideElementById('header-section') 
+    
+    hideElementById('main-section') 
+
+    hideElementById('') 
+
+    
+    showElementById('hidden-all')
+   
+ }
+function hideElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.add('hidden');
+}
+
+function showElementById(elementId) {
+    const element = document.getElementById(elementId);
+    element.classList.remove('hidden');
+}
+
